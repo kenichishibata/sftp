@@ -1,4 +1,5 @@
 # sftp
+[![NPM](https://nodei.co/npm/sftp-node.png)](https://npmjs.org/package/sftp-node)
 No nonsense sftp client module for nodejs
 
 # Why?

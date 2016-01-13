@@ -1,5 +1,5 @@
 {
-  "name": "nodesftp",
+  "name": "sftp-node",
   "version": "0.0.5",
   "description": "a simple sftp client built on top of ssh2",
   "main": "sftp.js",
