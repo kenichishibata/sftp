@@ -2,7 +2,7 @@ function upload(credentials,pathToRemoteFile,pathToLocalFile){
 var Client = require('ssh2').Client;
 var fs = require('fs');
 
-var pem = fs.readFileSync(credentials.pem);
+var pem = fs.readFileSync(credentials.privateKey);
 
 var options = {
     host: credentials.host,
