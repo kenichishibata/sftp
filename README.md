@@ -8,7 +8,7 @@ Because most of the sftp upload functions does not work well for me
 ## sftpUpload(credentials,remoteFilePath,localFilePath)
 Uploads the file
 ```
-var sftp = require('sftp');
+var sftp = require('nodesftp');
 
 var options = {
   host: 192.168.0.0,

@@ -1,5 +1,5 @@
 {
-  "name": "sftp",
+  "name": "nodesftp",
   "version": "0.0.1",
   "description": "a simple sftp client built on top of ssh2",
   "main": "sftp.js",
@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-jshint": "^2.0.0"
+    "gulp-jshint": "^2.0.0",
+    "jshint": "^2.0.1"
   }
 }

@@ -1,4 +1,4 @@
-var sftp = require('sftp');
+var sftp = require('nodesftp');
 
 var options = {
   host: 192.168.0.0,
