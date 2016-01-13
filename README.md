@@ -5,7 +5,7 @@ No nonsense sftp client module for nodejs
 Because most of the sftp upload functions does not work well for me
 
 # functions
-## sftpUpload(credentials,remoteFilePath,localFilePath)
+## upload(credentials,remoteFilePath,localFilePath)
 Uploads the file
 ```
 var sftp = require('nodesftp');
