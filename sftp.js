@@ -1,4 +1,4 @@
-module.exports = function upload(credentials,pathToRemoteFile,pathToLocalFile){
+function upload(credentials,pathToRemoteFile,pathToLocalFile){
 var Client = require('ssh2').Client;
 
 var options = {
@@ -23,3 +23,5 @@ client.on('ready', function() {
 }).connect(options);
 
 };
+
+module.exports.upload = upload ; 
