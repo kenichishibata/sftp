@@ -15,7 +15,7 @@ var client = new Client();
 client.on('ready', function() {
   client.sftp(function(err, sftp) {
     if (err) throw err;
-    sftp.fastPut(pathToLocal+file, pathToRemote+file ,function(err) {
+    sftp.fastPut(pathToLocalFile, pathToRemoteFile ,function(err) {
       if (err) throw err;
       else {
         console.log('uploaded file to:'+pathToRemoteFile);
