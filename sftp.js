@@ -1,11 +1,14 @@
 function upload(credentials,pathToRemoteFile,pathToLocalFile){
 var Client = require('ssh2').Client;
+var fs = require('fs');
+
+var pem = fs.readFileSync(credentials.pem);
 
 var options = {
-    host: credentials.HOST,
-    port: credentials.PORT,
-    username: credentials.USERNAME,
-    privateKey: require('fs').readFileSync(credentials.PRIVATE_KEY)
+    host: credentials.host,
+    port: credentials.port,
+    username: credentials.username,
+    privateKey: pem
 };
 
 var client = new Client();
@@ -24,4 +27,4 @@ client.on('ready', function() {
 
 };
 
-module.exports.upload = upload ; 
+module.exports.upload = upload ;
