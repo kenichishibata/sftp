@@ -3,7 +3,6 @@
 
 # sftp
 No nonsense sftp client module for nodejs
-
 # Why?
 Because most of the sftp upload functions does not work well for me
 
@@ -12,7 +11,7 @@ Because most of the sftp upload functions does not work well for me
 Uploads the file
 ```
 var fs = require('fs');
-var sftp = require('nodesftp');
+var sftp = require('sftp-node');
 
 var pem = fs.readFileSync('path/to/file.key');
 
