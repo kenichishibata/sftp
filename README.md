@@ -1,6 +1,7 @@
 [![NPM](https://nodei.co/npm/sftp-node.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.org/package/sftp-node)
-# sftp
 [![Build Status](https://travis-ci.org/kenichishibata31/sftp.svg)](https://travis-ci.org/kenichishibata31/sftp)
+
+# sftp
 No nonsense sftp client module for nodejs
 
 # Why?
@@ -10,13 +11,16 @@ Because most of the sftp upload functions does not work well for me
 ## upload(credentials,remoteFilePath,localFilePath)
 Uploads the file
 ```
+var fs = require('fs');
 var sftp = require('nodesftp');
+
+var pem = fs.readFileSync('path/to/file.key');
 
 var options = {
   host: 192.168.0.0,
   port: 22,
   username: user,
-  privateKey: require('fs').readFileSync(path/to/key.pem)
+  privateKey: pem
 };
 
 sftp.upload(options, 'path/to/remote/file', 'path/to/local/file');

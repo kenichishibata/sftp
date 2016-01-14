@@ -17,7 +17,10 @@
     "ssh2",
     "upload",
     "get",
-    "download"
+    "download",
+    "kenichi",
+    "shibata",
+    "kenichi.shibata"
   ],
   "author": "Kenichi Shibata <kenichi.shibata@fastretailing.com> (kenichishibata31.github.io)",
   "license": "MIT",
