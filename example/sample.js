@@ -1,13 +1,16 @@
 var fs = require('fs');
-var sftp = require('sftp-node');
-
-var pem = fs.readFileSync('path/to/file.key');
+var sftp = require('./../sftp');
 
 var options = {
-  host: '192.168.0.0',
+  host: '52.69.94.92',
   port: '22',
-  username: user,
-  privateKey: pem
+  username: 'ken',
+  privateKey: './key'
 };
 
-sftp.upload(options, 'path/to/remote/file', 'path/to/local/file');
+sftp.upload(options, '/home/ken/testfile', './testfile', function(err,res){
+  if(err) console.log('err: '+err);
+  else{
+    console.log('res: '+res);
+  }
+});
