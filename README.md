@@ -11,18 +11,21 @@ Because most of the sftp upload functions does not work well for me
 Uploads the file
 ```
 var fs = require('fs');
-var sftp = require('sftp-node');
-
-var pem = fs.readFileSync('path/to/file.key');
+var sftp = require('./../sftp');
 
 var options = {
-  host: 192.168.0.0,
-  port: 22,
-  username: user,
-  privateKey: pem
+  host: '52.69.94.92',
+  port: '22',
+  username: 'ken',
+  privateKey: './key'
 };
 
-sftp.upload(options, 'path/to/remote/file', 'path/to/local/file');
+sftp.upload(options, '/home/ken/testfile', './testfile', function(err,res){
+  if(err) console.log('err: '+err);
+  else{
+    console.log('res: '+res);
+  }
+});
 
 ```
 That's it! 3 lines of code then it uploads your file!
