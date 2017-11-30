@@ -11,7 +11,7 @@ Because most of the sftp upload functions does not work well for me
 Uploads the file
 ```
 var fs = require('fs');
-var sftp = require('./../sftp');
+var sftp = require('sftp-node');
 
 var options = {
   host: '52.69.94.92',
